@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Mi formulario</title>
+<style>
+   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+   }
+header {
+       background-color: #4CAF50;
+       color: white;
+       padding: 1rem;
+       text-aling: center;
+   }
+   main {
+         padding: 1rem;
+   }
+   </style>
+</head>
+<body>
+<header>
+<h2>Formulario</h2>
+</header>
+<main>
+<form id="miFormulario">
+<label for="nombre">Nombre:</label><br>
+<input type="text"id="nombre"name="nombre"><br><br>
+<label for="email">Email:</label><br>
+<input type="text"id="email"name="nombre"><br><br>
+<label for="sabor">Elige tu sabor favorito"</label>
+<input list="editors" name="sabor" id="sabor">
+<datalist id="editors">
+<option value="Chocolate">
+<option value="Vainilla">
+<option value="Fresa">
+<option value="Napolitano">
+</datalist>
+</main>
+<input type="submit" value="Enviar"onclick="window.close()">
+</form>
+</body>
+</html>
